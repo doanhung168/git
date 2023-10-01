@@ -1,0 +1,18 @@
+[
+  '{{repeat(20)}}',
+  {
+    _id: '{{objectId()}}',
+    name: '{{lorem(3, "words")}}',
+    description: '{{lorem(1, "paragraphs")}}',
+    price: '{{integer(100000, 2000000)}}',
+    type: '{{random("65191addcaac9168762919ed", "65191b2412a489318f6205ce", "65191c6912a489318f6205d0", "651926fd45f89ecebb2d2f74", "6519271c45f89ecebb2d2f77")}}',
+    rate: '{{random("1", "2", "3", "4", "5")}}',
+    sold: '{{integer(20, 4000)}}',
+    available_sizes: ['{{repeat(3,5)}}', '{{random("35", "36", "37", "38", "39", "40", "41", "42", "43", "44")}}'],
+    available_colors: ['{{repeat(4,6)}}', '{{random("green", "red", "yellow", "purple", "white", "black", "blue", "pink", "orange")}}'],
+    images: ['{{repeat(5)}}', '{{random("https://www.shoebrandlist.com/wp-content/uploads/2015/09/Air-Jordan-Retro-10.jpg", "https://www.shoebrandlist.com/wp-content/uploads/2015/09/nike-trun.jpg")}}'],
+    target: '{{random(0, 1, 2)}}',
+    created_date: '{{integer(1696146986, 1696146986000)}}',
+    state: '{{random(0, 1, 2)}}'
+  }
+]
